@@ -1,6 +1,8 @@
+import Interface.Interface;
+
 import java.util.Date;
 
-public class OtrosProductos {
+public class OtrosProductos implements Interface {
     int codigo;
 
     public int getCodigo() {
@@ -35,4 +37,9 @@ public class OtrosProductos {
 
     String modelo;
     int fechaCreada;
+
+    @Override
+    public void reset(){
+        System.out.println("Reseteando Otros...");
+    }
 }

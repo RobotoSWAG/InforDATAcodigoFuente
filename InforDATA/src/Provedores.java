@@ -1,4 +1,6 @@
-public class Provedores {
+import Interface.Interface;
+
+public class Provedores implements Interface {
     String NIF;
 
     public Provedores(String NIF, String dirrecion, int fecha, int cantidad) {
@@ -43,4 +45,9 @@ public class Provedores {
     String dirrecion;
     int Fecha;
     int cantidad;
+
+    @Override
+    public void reset(){
+        System.out.println("Resetando Provedores...");
+    }
 }

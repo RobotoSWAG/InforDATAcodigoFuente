@@ -1,6 +1,8 @@
+import Interface.Interface;
+
 import java.util.Date;
 
-public class Monitores {
+public class Monitores implements Interface {
     int codigo;
     String modelo;
 
@@ -65,4 +67,9 @@ public class Monitores {
     int fechaCreada;
     String piazDeOrigen;
     Empreza empreza;
+
+    @Override
+    public void reset(){
+        System.out.println("Reseteando Monitores...");
+    }
 }

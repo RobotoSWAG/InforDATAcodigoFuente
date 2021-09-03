@@ -1,4 +1,6 @@
-public class Empreza {
+import Interface.Interface;
+
+public class Empreza implements Interface {
     String nombre;
 
     public String getNombre() {
@@ -63,4 +65,9 @@ public class Empreza {
     int precio;
     boolean soporteTecnico;
     Cliente detallecliente;
+
+    @Override
+    public void reset(){
+        System.out.println("Reseteando Empreza...");
+    }
 }

@@ -1,6 +1,8 @@
+import Interface.Interface;
+
 import java.util.Date;
 
-public class Cliente {
+public class Cliente implements Interface {
     String DNI;
 
     public String getDNI() {
@@ -45,4 +47,9 @@ public class Cliente {
     int telefono;
     String Domicilio;
     int fechaComprada;
+
+    @Override
+    public void reset(){
+        System.out.println("Reseteando Cliente...");
+    }
 }

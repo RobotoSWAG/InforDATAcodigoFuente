@@ -1,6 +1,8 @@
+import Interface.Interface;
+
 import java.util.Date;
 
-public class Impresoras {
+public class Impresoras implements Interface {
     int codigo;
     String modelo;
 
@@ -45,4 +47,9 @@ public class Impresoras {
 
     String velocidad;
     int fechaCreada;
+
+    @Override
+    public void reset(){
+        System.out.println("Reseteando Impresora...");
+    }
 }

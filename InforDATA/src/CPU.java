@@ -1,6 +1,8 @@
+import Interface.Interface;
+
 import java.util.Date;
 
-public class CPU {
+public class CPU implements Interface {
     int codigo;
     String modelo;
 
@@ -66,4 +68,8 @@ public class CPU {
     String paizDeOrigen;
     Empreza empreza;
 
+    @Override
+    public void reset(){
+        System.out.println("Reseteando CPU...");
+    }
 }

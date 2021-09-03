@@ -1,6 +1,8 @@
+import Interface.Interface;
+
 import java.sql.Time;
 
-public class Alquilar {
+public class Alquilar implements Interface {
     int codigo;
     int tiempoDeAlquiler;
 
@@ -46,4 +48,8 @@ public class Alquilar {
     Monitores resolucionMaxima;
     CPU memoriaPrincipal;
 
+    @Override
+    public void reset(){
+        System.out.println("Reseteando Alquiler...");
+    }
 }
