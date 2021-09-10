@@ -1,6 +1,6 @@
 import Interface.Interface;
 
-public class Empreza implements Interface {
+public abstract class Empreza implements Interface {
     String nombre;
 
     public String getNombre() {

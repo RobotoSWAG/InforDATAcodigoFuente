@@ -2,7 +2,7 @@ import Interface.Interface;
 
 import java.util.Date;
 
-public class Cliente implements Interface {
+public abstract class Cliente implements Interface {
     String DNI;
 
     public String getDNI() {
@@ -51,5 +51,10 @@ public class Cliente implements Interface {
     @Override
     public void reset(){
         System.out.println("Reseteando Cliente...");
+    }
+
+    public void estado()
+    {
+        System.out.println("Existe :v");
     }
 }

@@ -1,6 +1,6 @@
 import Interface.Interface;
 
-public class Provedores implements Interface {
+public abstract class Provedores implements Interface {
     String NIF;
 
     public Provedores(String NIF, String dirrecion, int fecha, int cantidad) {

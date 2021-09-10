@@ -2,7 +2,7 @@ import Interface.Interface;
 
 import java.sql.Time;
 
-public class Alquilar implements Interface {
+public abstract class Alquilar implements Interface {
     int codigo;
     int tiempoDeAlquiler;
 
@@ -52,4 +52,11 @@ public class Alquilar implements Interface {
     public void reset(){
         System.out.println("Reseteando Alquiler...");
     }
+
+
+    public void estado()
+    {
+        System.out.println("Pagado");
+    }
+
 }

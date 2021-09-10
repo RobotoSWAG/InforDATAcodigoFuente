@@ -12,6 +12,7 @@ public class Main {
 */
         Impresoras impresoras = new Impresoras(1234, "elnuevo", "si", 01-11-21);
         impresoras.reset();
-
+        impresoras.estado();
+ 
     }
 }

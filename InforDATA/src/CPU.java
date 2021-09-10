@@ -2,7 +2,7 @@ import Interface.Interface;
 
 import java.util.Date;
 
-public class CPU implements Interface {
+public abstract class CPU implements Interface {
     int codigo;
     String modelo;
 
@@ -72,4 +72,11 @@ public class CPU implements Interface {
     public void reset(){
         System.out.println("Reseteando CPU...");
     }
+
+    public void estado()
+    {
+        System.out.println("Corriendo a 68% RAM Utilizado");
+    }
+
+
 }

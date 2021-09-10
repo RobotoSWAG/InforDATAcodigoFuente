@@ -2,7 +2,7 @@ import Interface.Interface;
 
 import java.util.Date;
 
-public class OtrosProductos implements Interface {
+public abstract class OtrosProductos implements Interface {
     int codigo;
 
     public int getCodigo() {

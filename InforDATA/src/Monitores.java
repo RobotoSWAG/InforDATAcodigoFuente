@@ -2,9 +2,13 @@ import Interface.Interface;
 
 import java.util.Date;
 
-public class Monitores implements Interface {
+public abstract class Monitores implements Interface {
     int codigo;
     String modelo;
+
+    public Monitores() {
+
+    }
 
     public int getCodigo() {
         return codigo;
@@ -71,5 +75,10 @@ public class Monitores implements Interface {
     @Override
     public void reset(){
         System.out.println("Reseteando Monitores...");
+    }
+
+    public void estado()
+    {
+        System.out.println("Corriendo con: 60hz");
     }
 }

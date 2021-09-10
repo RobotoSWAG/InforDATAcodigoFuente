@@ -2,7 +2,7 @@ import Interface.Interface;
 
 import java.util.Date;
 
-public class Impresoras implements Interface {
+public class Impresoras extends Monitores implements Interface {
     int codigo;
     String modelo;
 
@@ -39,6 +39,7 @@ public class Impresoras implements Interface {
     }
 
     public Impresoras(int codigo, String modelo, String velocidad, int fechaCreada) {
+        super();
         this.codigo = codigo;
         this.modelo = modelo;
         this.velocidad = velocidad;
@@ -51,5 +52,10 @@ public class Impresoras implements Interface {
     @Override
     public void reset(){
         System.out.println("Reseteando Impresora...");
+    }
+
+    public void estado()
+    {
+        System.out.println("Requiere Magenta");
     }
 }
